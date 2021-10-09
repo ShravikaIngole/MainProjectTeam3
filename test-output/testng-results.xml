@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="120263" started-at="2021-10-09T06:36:51Z" finished-at="2021-10-09T06:38:52Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="120263" started-at="2021-10-09T06:36:51Z" finished-at="2021-10-09T06:38:52Z">
+      <class name="com.selenium.testCases.testRun">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.selenium.testCases.testRun@4cc0edeb]" name="openBrowser" is-config="true" duration-ms="6403" started-at="2021-10-09T12:06:45Z" finished-at="2021-10-09T12:06:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="loginpageTest()[pri:0, instance:com.selenium.testCases.testRun@4cc0edeb]" name="loginpageTest" duration-ms="45391" started-at="2021-10-09T12:06:52Z" finished-at="2021-10-09T12:07:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginpageTest -->
+        <test-method status="PASS" signature="themePageTest()[pri:1, instance:com.selenium.testCases.testRun@4cc0edeb]" name="themePageTest" duration-ms="54090" started-at="2021-10-09T12:07:37Z" finished-at="2021-10-09T12:08:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- themePageTest -->
+        <test-method status="PASS" signature="epicPageTest()[pri:2, instance:com.selenium.testCases.testRun@4cc0edeb]" name="epicPageTest" duration-ms="6481" started-at="2021-10-09T12:08:31Z" finished-at="2021-10-09T12:08:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- epicPageTest -->
+        <test-method status="PASS" signature="commentPageTest()[pri:3, instance:com.selenium.testCases.testRun@4cc0edeb]" name="commentPageTest" duration-ms="2079" started-at="2021-10-09T12:08:37Z" finished-at="2021-10-09T12:08:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- commentPageTest -->
+        <test-method status="PASS" signature="attachmentPageTest()[pri:4, instance:com.selenium.testCases.testRun@4cc0edeb]" name="attachmentPageTest" duration-ms="2073" started-at="2021-10-09T12:08:40Z" finished-at="2021-10-09T12:08:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attachmentPageTest -->
+        <test-method status="PASS" signature="activityLogPageTest()[pri:5, instance:com.selenium.testCases.testRun@4cc0edeb]" name="activityLogPageTest" duration-ms="10122" started-at="2021-10-09T12:08:42Z" finished-at="2021-10-09T12:08:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- activityLogPageTest -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.selenium.testCases.testRun@4cc0edeb]" name="closeBrowser" is-config="true" duration-ms="1195" started-at="2021-10-09T12:08:52Z" finished-at="2021-10-09T12:08:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.selenium.testCases.testRun -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

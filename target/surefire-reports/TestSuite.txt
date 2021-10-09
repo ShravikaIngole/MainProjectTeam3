@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 8.109 s <<< FAILURE! - in TestSuite
+loginpageTest(com.selenium.testCases.testRun)  Time elapsed: 0.023 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.selenium.testCases.testRun.loginpageTest(testRun.java:27)
+
