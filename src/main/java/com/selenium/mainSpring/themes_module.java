@@ -1,11 +1,13 @@
 package com.selenium.mainSpring;
 
 import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
 import com.selenium.launchBrowser.DriverSetup;
+import com.selenium.utilities.ExcelData;
 import com.selenium.utilities.readProperty;
 
 public class themes_module extends DriverSetup{
@@ -38,12 +40,13 @@ public class themes_module extends DriverSetup{
 		Thread.sleep(2000);
 	}
 	
-	public static void rank() throws IOException, InterruptedException {
+	public static void rank() throws Exception {
 		
 		WebElement rank = driver.findElement(By.id(readProperty.getProperty("rank_Id")));
 		rank.click();
 		rank.clear();
-		rank.sendKeys(readProperty.getProperty("rank_Value"));
+		//rank.sendKeys(readProperty.getProperty("rank_Value"));
+		driver.findElement(By.xpath(readProperty.getProperty("rank_Id"))).sendKeys(ExcelData.readData(1, 1));
 		Thread.sleep(2000);
 	}
 	
@@ -56,19 +59,21 @@ public class themes_module extends DriverSetup{
 		Thread.sleep(2000);
 	}
 	
-	public static void name() throws IOException, InterruptedException {
+	public static void name() throws Exception {
 		
 		WebElement name = driver.findElement(By.id(readProperty.getProperty("name_Id")));
 		name.click();
-		name.sendKeys(readProperty.getProperty("name_Value"));
+		//name.sendKeys(readProperty.getProperty("name_Value"));
+		driver.findElement(By.id(readProperty.getProperty("name_Id"))).sendKeys(ExcelData.readData(1, 0));
 		Thread.sleep(2000);
 	}
 	
-	public static void description() throws IOException {
+	public static void description() throws Exception {
 		
 		WebElement description = driver.findElement(By.xpath(readProperty.getProperty("description_Xpath")));
 		description.click();
-		description.sendKeys(readProperty.getProperty("description_Value"));
+		//description.sendKeys(readProperty.getProperty("description_Value"));
+		driver.findElement(By.xpath(readProperty.getProperty("description_Xpath"))).sendKeys(ExcelData.readData(1, 2));
 	}
 	
 	public static void priority() throws IOException, InterruptedException {
@@ -113,7 +118,7 @@ public class themes_module extends DriverSetup{
 		
 		
 		//to block
-	public static void blockComment() throws IOException, InterruptedException {
+	public static void blockComment() throws Exception {
 		
 		//driver.switchTo().frame("contentframe");
 //		WebElement themeId = driver.findElement(By.xpath(readProperty.getProperty("themeID_Xpath")));
@@ -130,21 +135,23 @@ public class themes_module extends DriverSetup{
 		Thread.sleep(2000);
 		WebElement blockingComment = driver.findElement(By.xpath(readProperty.getProperty("blockingComment_Xpath")));
 		blockingComment.click();
-		blockingComment.sendKeys(readProperty.getProperty("blockingComment_Value"));
+		//blockingComment.sendKeys(readProperty.getProperty("blockingComment_Value"));
+		driver.findElement(By.xpath(readProperty.getProperty("blockingComment_Xpath"))).sendKeys(ExcelData.readData(1, 3));
 		WebElement saveBlockBtn = driver.findElement(By.xpath(readProperty.getProperty("saveBlockBtn_Xpath")));
 		saveBlockBtn.click();
 		Thread.sleep(3000);
 	}
 		
 		//to unblock
-	public static void unblockComment() throws IOException, InterruptedException {
+	public static void unblockComment() throws Exception {
 		
 		WebElement unblockBtn = driver.findElement(By.xpath(readProperty.getProperty("unblockBtn_Xpath")));
 		unblockBtn.click();
 		Thread.sleep(2000);
 		WebElement unblockingComment = driver.findElement(By.xpath(readProperty.getProperty("unblockingComment_Xpath")));
 		unblockingComment.click();
-		unblockingComment.sendKeys(readProperty.getProperty("unblockingComment_Value"));
+	//	unblockingComment.sendKeys(readProperty.getProperty("unblockingComment_Value"));
+		driver.findElement(By.xpath(readProperty.getProperty("unblockingComment_Xpath"))).sendKeys(ExcelData.readData(1, 4));
 		Thread.sleep(2000);
 		WebElement saveunblockBtn = driver.findElement(By.xpath(readProperty.getProperty("saveunblockBtn_Xpath")));
 		saveunblockBtn.click();
