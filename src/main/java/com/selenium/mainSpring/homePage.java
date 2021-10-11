@@ -20,7 +20,7 @@ public class homePage extends DriverSetup {
 		Actions action= new Actions(driver);
 		action.moveToElement(mainMenu).build().perform();
 		
-		Thread.sleep(3000);
+		Thread.sleep(6000);
 		
 		WebElement CFO_Onsite = driver.findElement(By.xpath(readProperty.getProperty("CFO_Onsite_Xpath")));
 		CFO_Onsite.click();

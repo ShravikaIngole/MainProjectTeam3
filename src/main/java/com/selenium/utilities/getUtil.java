@@ -51,32 +51,6 @@ public class getUtil {
 		        return false; 
 		    }
 			
-		
-	/*public static void visibilityOfElementWait(String idLocator) {
-		
-			wait = new WebDriverWait(driver, 60);
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(idLocator)));
-		}
-	
-	public static String getAlertBoxText() {
-		
-		String msg = driver.switchTo().alert().getText();
-		driver.switchTo().alert().accept();
-		return msg;
-	}
-	
-	public static void handleAlert() throws Exception {
-
-		Alert alert = driver.switchTo().alert();
-		alert.accept();
-	}
-	
-	public static String getTimeStamp() {
-		Date date = new Date();
-		return date.toString().replaceAll(":", "_").replaceAll(" ", "_");
-	}
-}*/
-
 	}
 
 
@@ -91,7 +65,7 @@ public class getUtil {
 		}
 	}
 	
-public static String getAlertBoxText() {
+	public static String getAlertBoxText() {
 		
 		String msg = driver.switchTo().alert().getText();
 		driver.switchTo().alert().accept();

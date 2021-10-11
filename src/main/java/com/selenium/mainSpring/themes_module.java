@@ -83,14 +83,6 @@ public class themes_module extends DriverSetup{
 		priority.selectByVisibleText("Medium");
 	}
 		
-		//JavascriptExecutor js = (JavascriptExecutor) driver;
-		//js.executeScript("window.scrollBy(0,80)", "Save");
-		
-//		Thread.sleep(2000);
-//		WebElement plannedStart = driver.findElement(By.xpath(readProperty.getProperty("plannedStart_Xpath")));
-//		plannedStart.click();
-//		//plannedStart.sendKeys(readProperty.getProperty("plannedStartDate_Value"));
-//		driver.findElement(By.xpath(readProperty.getProperty("plannedStartDate_Xpath"))).click();
 		
 	public static void size() throws IOException, InterruptedException {
 		
@@ -158,22 +150,7 @@ public class themes_module extends DriverSetup{
 		Thread.sleep(2000);
 	}
 
-        //to return to main page
-//	public static void returnButton() throws IOException, InterruptedException {
-//		
-////		WebElement returnBtn = driver.findElement(By.id(readProperty.getProperty("returnBtn_Id")));
-////		returnBtn.click();
-////		Thread.sleep(2000);
-//		
-//		
-//		WebElement returnBtn = driver.findElement(By.id(readProperty.getProperty("returnBtn_Id")));
-//		JavascriptExecutor executor = (JavascriptExecutor)driver;
-//		executor.executeScript("arguments[0].click();", returnBtn);
-//		Thread.sleep(8000);
-//		
-//		
-//	}
-	
+       
 
 	
 	

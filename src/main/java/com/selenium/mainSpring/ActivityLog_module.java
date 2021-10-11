@@ -22,12 +22,7 @@ public class ActivityLog_module extends DriverSetup {
 	
 	
 	public static void returnButton() throws IOException, InterruptedException {
-		
-//		WebElement returnBtn = driver.findElement(By.id(readProperty.getProperty("returnBtn_Id")));
-//		returnBtn.click();
-//		Thread.sleep(2000);
-		
-		
+				
 		WebElement returnBtn = driver.findElement(By.id(readProperty.getProperty("returnBtn_Id")));
 		JavascriptExecutor executor = (JavascriptExecutor)driver;
 		executor.executeScript("arguments[0].click();", returnBtn);
