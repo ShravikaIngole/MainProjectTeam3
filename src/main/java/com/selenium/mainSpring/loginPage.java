@@ -31,18 +31,18 @@ public class loginPage extends DriverSetup {
 		signInBtn.click();
 		
 		
-		  Scanner scanner = new Scanner(System.in);
-		  System.out.println("Enter OTP to login :"); String OTP = scanner.next();
-		  Thread.sleep(7000); WebElement otp =
-		  driver.findElement(By.id(readProperty.getProperty("otp_Id"))); otp.click();
-		  otp.sendKeys(OTP);
-		 
-		
-		WebElement verifyBtn = driver.findElement(By.id(readProperty.getProperty("verifyBtn_Id")));
-		verifyBtn.click();
-		
-		WebElement yesBtn = driver.findElement(By.id(readProperty.getProperty("yesBtn_Id")));
-		yesBtn.click();
+//		  Scanner scanner = new Scanner(System.in);
+//		  System.out.println("Enter OTP to login :"); String OTP = scanner.next();
+//		  Thread.sleep(7000); WebElement otp =
+//		  driver.findElement(By.id(readProperty.getProperty("otp_Id"))); otp.click();
+//		  otp.sendKeys(OTP);
+//		 
+//		
+//		WebElement verifyBtn = driver.findElement(By.id(readProperty.getProperty("verifyBtn_Id")));
+//		verifyBtn.click();
+//		
+//		WebElement yesBtn = driver.findElement(By.id(readProperty.getProperty("yesBtn_Id")));
+//		yesBtn.click();
 		Thread.sleep(10000);
 		System.out.println("Login Successful");
 		

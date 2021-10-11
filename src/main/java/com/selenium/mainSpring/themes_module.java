@@ -45,8 +45,8 @@ public class themes_module extends DriverSetup{
 		WebElement rank = driver.findElement(By.id(readProperty.getProperty("rank_Id")));
 		rank.click();
 		rank.clear();
-		//rank.sendKeys(readProperty.getProperty("rank_Value"));
-		driver.findElement(By.xpath(readProperty.getProperty("rank_Id"))).sendKeys(ExcelData.readData(1, 1));
+		rank.sendKeys(readProperty.getProperty("rank_Value"));
+		//driver.findElement(By.xpath(readProperty.getProperty("rank_Id"))).sendKeys(ExcelData.readData(1, 1));
 		Thread.sleep(2000);
 	}
 	
