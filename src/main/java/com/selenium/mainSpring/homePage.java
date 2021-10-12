@@ -1,9 +1,12 @@
 package com.selenium.mainSpring;
 
 import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+
+
 import com.selenium.utilities.readProperty;
 import com.selenium.launchBrowser.DriverSetup;
 
@@ -18,6 +21,10 @@ public class homePage extends DriverSetup {
 		WebElement mainMenu = driver.findElement(By.xpath(readProperty.getProperty("mainMenu_Xpath")));
 		
 		Actions action= new Actions(driver);
+		action.moveToElement(mainMenu).build().perform();
+		Thread.sleep(2000);
+		action.moveToElement(mainMenu).build().perform();
+		Thread.sleep(2000);
 		action.moveToElement(mainMenu).build().perform();
 		
 		Thread.sleep(6000);

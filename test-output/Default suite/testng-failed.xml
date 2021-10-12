@@ -5,13 +5,9 @@
     <classes>
       <class name="com.selenium.testCases.testRun">
         <methods>
-          <include name="attachmentPageTest"/>
-          <include name="activityLogPageTest"/>
           <include name="closeBrowser"/>
           <include name="themePageTest"/>
-          <include name="commentPageTest"/>
           <include name="openBrowser"/>
-          <include name="epicPageTest"/>
         </methods>
       </class> <!-- com.selenium.testCases.testRun -->
     </classes>

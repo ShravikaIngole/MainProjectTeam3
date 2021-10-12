@@ -16,8 +16,9 @@ public class themes_module extends DriverSetup{
 		
 		Thread.sleep(3000);
 		WebElement execute = driver.findElement(By.id(readProperty.getProperty("execute_Id")));
-		execute.click();
 		
+		execute.click();
+		Thread.sleep(3000);
 		WebElement theme = driver.findElement(By.id(readProperty.getProperty("themes_Id")));
 		theme.click();
 	}

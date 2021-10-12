@@ -1,11 +1,14 @@
 package com.selenium.mainSpring;
 
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+
 import com.selenium.launchBrowser.DriverSetup;
+import com.selenium.utilities.getUtil;
 import com.selenium.utilities.readProperty;
 
 public class comments_module extends DriverSetup  {
@@ -17,6 +20,8 @@ public static void commentsValidation() throws IOException, InterruptedException
 		WebElement openComments = driver.findElement(By.xpath(readProperty.getProperty("comments_Xpath")));
 		JavascriptExecutor executor = (JavascriptExecutor)driver;
 		executor.executeScript("arguments[0].click();", openComments);
+		driver.manage().timeouts().pageLoadTimeout(getUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(getUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
 		Thread.sleep(2000);
 		
 		

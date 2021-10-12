@@ -118,9 +118,8 @@ public class testRun {
 		logger.log(Status.INFO, "Epic page is displayed");
 		logger.pass("Passed");
 		
-		
-		
-		
+		epic_module.createEpic();
+	
 	}
 	
 	@Test (priority = 3)
